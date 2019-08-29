@@ -21,10 +21,7 @@ function color(id) {
   <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=keys&char={NAME}';" style="margin:3px">{L_KEYS}</div>
   <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=flags&char={NAME}';" style="margin:3px">{L_FLAGS}</div>
   <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=skills&char={NAME}';" style="margin:3px">{L_SKILLS}</div>
-  <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=corpse&char={NAME}';" style="margin:3px">{L_CORPSE}</div>
   <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=factions&char={NAME}';" style="margin:3px">{L_FACTION}</div>
-  <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=charmove&char={NAME}';" style="margin:3px">{L_CHARMOVE}</div>
-  <div class='FreeButton' onclick="window.external.AddFavorite(location.href, document.title);" style="margin:3px">{L_BOOKMARK}</div>
 </div>
 </div>
 <center>

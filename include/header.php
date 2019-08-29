@@ -51,13 +51,9 @@ $cb_template->assign_vars(array(
   'INDEX_URL' => ($charbrowser_wrapped) ? $_SERVER['SCRIPT_NAME'] : "index.php",
   'L_GUILD' => $language['HEADER_GUILD'],
   'L_NAME' => $language ['HEADER_NAME'],
-  'L_SETTINGS' => $language['HEADER_SETTINGS'],
   'L_BAZAAR' => $language['HEADER_BAZAAR'],
   'L_HOME' => $language['HEADER_HOME'],
-  'L_CHARMOVE' => $language['HEADER_CHARMOVE'],
   'L_SIGBUILD' => $language['HEADER_SIGBUILD'],
-  'L_REPORT_ERRORS' => $language['HEADER_REPORT_ERRORS'],
-  'L_HELP' => $language ['HEADER_HELP'],
   'L_NAVIGATE' => $language ['HEADER_NAVIGATE'])
 );
 

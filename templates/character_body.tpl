@@ -16,11 +16,8 @@ function display(type, id, prefix) {
   <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=aas&char={FIRST_NAME}';" style="margin:3px">{L_AAS}</div> 
   <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=keys&char={FIRST_NAME}';" style="margin:3px">{L_KEYS}</div>
   <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=flags&char={FIRST_NAME}';" style="margin:3px">{L_FLAGS}</div> 
-  <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=skills&char={FIRST_NAME}';" style="margin:3px">{L_SKILLS}</div> 
-  <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=corpse&char={FIRST_NAME}';" style="margin:3px">{L_CORPSE}</div> 
-  <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=factions&char={FIRST_NAME}';" style="margin:3px">{L_FACTION}</div> 
-  <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=charmove&char={FIRST_NAME}';" style="margin:3px">{L_CHARMOVE}</div> 
-  <div class='FreeButton' onclick="window.external.AddFavorite(location.href, document.title);" style="margin:3px">{L_BOOKMARK}</div> 
+  <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=skills&char={FIRST_NAME}';" style="margin:3px">{L_SKILLS}</div>
+  <div class='FreeButton' onclick="window.location='{INDEX_URL}?page=factions&char={FIRST_NAME}';" style="margin:3px">{L_FACTION}</div>
 </div> 
 </div> 
 <center> 
@@ -53,21 +50,7 @@ function display(type, id, prefix) {
           <div class='IventoryTitleMid'>{L_HEADER_INVENTORY}</div> 
           <div class='IventoryTitleRight'></div> 
         </div> 
-        <div class='InventoryInner'> 
-        
-          <div class='InventoryStats2'> 
-            <table class='StatTable'> 
-              <tr> 
-                <td nowrap> 
-                  {L_REGEN}<br>{L_FT}<br>{L_DS}<br>{L_HASTE} 
-                </td> 
-                <td> 
-                  {REGEN}<br>{FT}<br>{DS}<br>{HASTE}% 
-                </td> 
-              </tr> 
-            </table> 
-          </div> 
-
+        <div class='InventoryInner'>
           <div class='InventoryStats'> 
             <table class='StatTable'> 
               <tr><td colspan='2'>{FIRST_NAME} {LAST_NAME}</td></tr> 

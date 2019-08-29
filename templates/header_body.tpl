@@ -20,13 +20,9 @@
     <br>
 
     <font style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;'>
-    <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='{INDEX_URL}?page=signaturebuilder'>{L_SIGBUILD}</a> &nbsp;|&nbsp; 
-    <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='{INDEX_URL}?page=charmove'>{L_CHARMOVE}</a> &nbsp;|&nbsp; 
+    <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='{INDEX_URL}?page=signaturebuilder'>{L_SIGBUILD}</a> &nbsp;|&nbsp;
     <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='{INDEX_URL}?page=bazaar'>{L_BAZAAR}</a> &nbsp;|&nbsp; 
-    <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='{INDEX_URL}'>{L_HOME}</a> &nbsp;|&nbsp; 
-    <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='{INDEX_URL}?page=settings'>{L_SETTINGS}</a> &nbsp;|&nbsp; 
-    <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='http://mqemulator.net/forum2/viewforum.php?f=20'>{L_REPORT_ERRORS}</a> &nbsp;|&nbsp; 
-    <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='{INDEX_URL}?page=help'>{L_HELP}</a>
+    <a style='font-family:arial;font-size:7pt;text-decoration:none;font-weight;none;color:#FFFFFF;' href='{INDEX_URL}'>{L_HOME}</a> &nbsp;|&nbsp;
   </div>
 </div></div>
 <div class='body'>
