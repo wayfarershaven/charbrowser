@@ -73,7 +73,7 @@ if (!is_numeric($start)) cb_message_die($language['MESSAGE_ERROR'],$language['ME
 $where = "";
 $divider = "WHERE ";
 if (!$showsoftdelete && !$charbrowser_is_admin_page) {
-   $where .= $divider."character_data.deleted_at IS NULL"; 
+   $where .= $divider."character_data.is_deleted = '0'";
    $divider = " AND ";
 }
 if ($name) {
@@ -93,7 +93,7 @@ $order = "ORDER BY $orderby $direction LIMIT $start, $numToDisplay;";
 $tpl = <<<TPL
 SELECT character_data.class, character_data.level, 
        character_data.name, guilds.name AS guildname, 
-       character_data.deleted_at
+       character_data.is_deleted
 FROM character_data 
 LEFT JOIN guild_members
        ON character_data.id = guild_members.char_id 
@@ -147,7 +147,7 @@ foreach ($characters as $character) {
    $cb_template->assign_both_block_vars("characters", array( 
       'CLASS' => $dbclassnames[$character["class"]],      
       'LEVEL' => $character["level"],     
-      'DELETED' => (($character["deleted_at"]) ? " ".$language['CHAR_DELETED']:""),
+      'DELETED' => (($character["is_deleted"]) ? " ".$language['CHAR_DELETED']:""),
       'NAME' => $character["name"],
       'GUILD_NAME' => getGuildLink($character["guildname"]) )
    );

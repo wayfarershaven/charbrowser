@@ -97,54 +97,46 @@ class item {
            $this->myskill=$row["itemtype"];
            //switch ($this->myslot){                                                         //removed line 2/9/2014 
            switch (true){                                                                    //added line 2/9/2014
-                case ($this->myslot >= 0 && $this->myslot <= 22):
+               case ($this->myslot >= 0 && $this->myslot <= 21 || $this->myslot == 9999):
                      $this->mytype = 1; 
                      $this->myvslot = $this->myslot; 
-                     break; 
-                case ($this->myslot >= 23 && $this->myslot <= 32): 
-                     $this->mytype = 2; 
+                     break;
+               case ($this->myslot >= 22 && $this->myslot <= 29):
+                     $this->mytype = 2;
                      $this->myvslot = $this->myslot; 
                      break; 
                 case ($this->myslot >= 251 && $this->myslot <= 260): 
-                     $this->mytype = 23; 
+                     $this->mytype = 22;
                      $this->myvslot = $this->myslot - 250; 
                      break; 
                 case ($this->myslot >= 261 && $this->myslot <= 270): 
-                     $this->mytype = 24; 
+                     $this->mytype = 23;
                      $this->myvslot = $this->myslot - 260; 
                      break; 
                 case ($this->myslot >= 271 && $this->myslot <= 280): 
-                     $this->mytype = 25; 
+                     $this->mytype = 24;
                      $this->myvslot = $this->myslot - 270; 
                      break; 
                 case ($this->myslot >= 281 && $this->myslot <= 290): 
-                     $this->mytype = 26; 
+                     $this->mytype = 25;
                      $this->myvslot = $this->myslot - 280; 
                      break; 
                 case ($this->myslot >= 291 && $this->myslot <= 300): 
-                     $this->mytype = 27; 
+                     $this->mytype = 26;
                      $this->myvslot = $this->myslot - 290; 
                      break; 
                 case ($this->myslot >= 301 && $this->myslot <= 310): 
-                     $this->mytype = 28; 
+                     $this->mytype = 27;
                      $this->myvslot = $this->myslot - 300; 
                      break; 
                 case ($this->myslot >= 311 && $this->myslot <= 320): 
-                     $this->mytype = 29; 
+                     $this->mytype = 28;
                      $this->myvslot = $this->myslot - 310; 
                      break; 
                 case ($this->myslot >= 321 && $this->myslot <= 330): 
-                     $this->mytype = 30; 
+                     $this->mytype = 29;
                      $this->myvslot = $this->myslot - 320; 
-                     break; 
-                case ($this->myslot >= 331 && $this->myslot <= 340): 
-                     $this->mytype = 31; 
-                     $this->myvslot = $this->myslot - 330; 
-                     break; 
-                case ($this->myslot >= 341 && $this->myslot <= 350): 
-                     $this->mytype = 32; 
-                     $this->myvslot = $this->myslot - 340; 
-                     break; 
+                     break;
                 case ($this->myslot >= 2000 && $this->myslot <= 2023): 
                      $this->mytype = 3; 
                      $this->myvslot = $this->myslot; 

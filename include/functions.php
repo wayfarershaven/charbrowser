@@ -118,10 +118,8 @@ function output_profile_menu($charname, $curpage) {
       array( 'PAGE' => 'keys', 'BUTTON_NAME' => $language['BUTTON_KEYS']),
       array( 'PAGE' => 'flags', 'BUTTON_NAME' => $language['BUTTON_FLAGS']),
       array( 'PAGE' => 'skills', 'BUTTON_NAME' => $language['BUTTON_SKILLS']),
-      array( 'PAGE' => 'corpse', 'BUTTON_NAME' => $language['BUTTON_CORPSE']),
       array( 'PAGE' => 'factions', 'BUTTON_NAME' => $language['BUTTON_FACTION']),
       array( 'PAGE' => 'signaturebuilder', 'BUTTON_NAME' => $language['BUTTON_SIG']),
-      array( 'PAGE' => 'charmove', 'BUTTON_NAME' => $language['BUTTON_CHARMOVE'])
    );
    
    $cb_template->set_filenames(array(

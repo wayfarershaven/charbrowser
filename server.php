@@ -45,7 +45,8 @@ SELECT MAX(character_data.level) as maxlevel,
        AVG(character_data.level) as avglevel,
        COUNT(*) as count
 FROM character_data 
-WHERE character_data.deleted_at IS NULL
+WHERE character_data.is_deleted = '0'
+AND character_data.level BETWEEN '1' AND '65'
 TPL;
  
 $query = sprintf($tpl);
@@ -65,7 +66,8 @@ $charactercount = $row['count'];
 $tpl = <<<TPL
 SELECT count(*) as count, avg(character_data.level) as level, character_data.class
 FROM character_data
-WHERE character_data.deleted_at IS NULL
+WHERE character_data.is_deleted = '0'
+AND character_data.level BETWEEN '1' AND '65'
 GROUP BY character_data.class
 TPL;
  
@@ -102,7 +104,8 @@ foreach ($classes as $index => $value) {
 $tpl = <<<TPL
 SELECT count(*) as count, character_data.level as level
 FROM character_data
-WHERE character_data.deleted_at IS NULL
+WHERE character_data.is_deleted = '0'
+AND character_data.level BETWEEN '1' AND '65'
 GROUP BY character_data.level
 TPL;
  
