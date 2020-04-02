@@ -140,6 +140,7 @@ else {
 /*********************************************
                OUTPUT IMAGE
 *********************************************/
+ob_clean();
 header('Last-Modified: '.gmdate('D, d M Y H:i:s', $config_time).' GMT', true, 200);
 header("Content-Type: image/png"); 
 imagepng($image); 
