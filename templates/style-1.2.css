@@ -1729,51 +1729,43 @@ BODY.CB_Body {
 }
 
 #charbrowser .slotloc21 { 
-  top: 272px; 
+  top: 315px;
   left: 302px; 
 } 
 #charbrowser .slotloc22 {
   top: 315px;
   left: 302px;
 }
-#charbrowser .slotloc23 {
+#charbrowser .slotloc22 {
   top: 186px;
   left: 352px;
 }
-#charbrowser .slotloc24 {
+#charbrowser .slotloc23 {
   top: 186px;
   left: 395px;
+}
+#charbrowser .slotloc24 {
+  top: 229px;
+  left: 352px;
 }
 #charbrowser .slotloc25 {
   top: 229px;
-  left: 352px;
+  left: 395px;
 }
 #charbrowser .slotloc26 {
-  top: 229px;
-  left: 395px;
+  top: 272px;
+  left: 352px;
 }
 #charbrowser .slotloc27 {
   top: 272px;
-  left: 352px;
+  left: 395px;
 }
 #charbrowser .slotloc28 {
-  top: 272px;
-  left: 395px;
+  top: 315px;
+  left: 352px;
 }
 #charbrowser .slotloc29 {
   top: 315px;
-  left: 352px;
-}
-#charbrowser .slotloc30 {
-  top: 315px;
-  left: 395px;
-}
-#charbrowser .slotloc31 {
-  top: 358px;
-  left: 352px;
-}
-#charbrowser .slotloc32 {
-  top: 358px;
   left: 395px;
 }
 #charbrowser .slotloc2000 {
@@ -1951,7 +1943,7 @@ BODY.CB_Body {
   background-image: url(../images/slots/slot_21.gif);
 }
 #charbrowser .slotimage22 {
-  background-image: url(../images/slots/slot_22.gif);
+  background-image: url(../images/slots/slot_.gif);
 }
 #charbrowser .slotimage {
   background-image: url(../images/slots/slot_.gif);

@@ -120,11 +120,8 @@ $language['SIGNATURE_TABS'] = array(
 );
 
 //index language 
-$language['INDEX_INTRO'] ="<p>The character profile and the bazaar have been modified to now have item popups. Instead of the static single item displayed at the bottom you can now have multiple items up and do side by side compares.</p> 
-<p>To get the item popup simply hover over an items icon and the items stats will display in a small popup window near your cursor. The process is the same for the bazaar but you hover over the item name. In both cases you can click the icon/link to lock the item display on the screen. A second click will clear the item from being locked.</p>
-<p>You can click and drag each item popup to arrange them. Each item popup will have 3 buttons in the title bar. The first button will tile the items into rows and columns. The third button will close all open popups. The last button will close just the current popup.</p>
-<p>This new item viewing process interfered with the previous way you used to open a bag to see the contents. To replace that each bag will have an small arrow in the top left corner. Clicking that arrow will open the bag for inspection.</p>"; 
-$language['INDEX_VERSION'] = "Version"; 
+$language['INDEX_INTRO'] ="<center>Welcome to the Haven Magelo. Please report any issues to the forums.</center>";
+$language['INDEX_VERSION'] = "Version";
 $language['INDEX_BY'] = "By"; 
 
 //search results language 

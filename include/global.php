@@ -62,9 +62,9 @@ define("SE_ACV2", 416);
 
 //slot numbers
 define("SLOT_EQUIPMENT_START", 0);
-define("SLOT_EQUIPMENT_END", 22);
-define("SLOT_INVENTORY_START", 23);
-define("SLOT_INVENTORY_END", 32);
+define("SLOT_EQUIPMENT_END", 21);
+define("SLOT_INVENTORY_START", 22);
+define("SLOT_INVENTORY_END", 29);
 define("SLOT_BANK_START", 2000);
 define("SLOT_BANK_END", 2023);
 define("SLOT_SHAREDBANK_START", 2500);
