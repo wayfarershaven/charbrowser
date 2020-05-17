@@ -35,6 +35,10 @@
  *      modularized the profile menu output
  *   March 22, 2020 - Maudigan
  *     impemented common.php
+ *   April 25, 2020 - Maudigan
+ *     implement multi-tenancy
+ *   May 3, 2020 - Maudigan
+ *     changes to minimize database access
  *
  ***************************************************************************/
   
@@ -81,11 +85,25 @@ TPL;
 $query = sprintf($tpl, $charID);
 $result = $cbsql->query($query);
 if (!$cbsql->rows($result)) cb_message_die($language['CORPSE_CORPSES']." - ".$name,$language['MESSAGE_NO_CORPSES']);
-$corpses = array();
-while ($row = $cbsql->nextrow($result)) {
-   $corpses[] = $row;
-}
- 
+
+$corpses = $cbsql->fetch_all($result);  
+$zone_ids = get_id_list($corpses, 'zone_id');
+
+//get zone data
+$tpl = <<<TPL
+SELECT short_name, zoneidnumber
+FROM zone 
+WHERE zoneidnumber IN (%s) 
+TPL;
+$query = sprintf($tpl, $zone_ids);
+$result = $cbsql_content->query($query);
+
+$zones = $cbsql_content->fetch_all($result);  
+
+//join zones and corpse queries
+$corpse_zones = manual_join($corpses, 'zone_id', $zones, 'zoneidnumber', 'inner');
+
+
  
 /*********************************************
                DROP HEADER
@@ -120,7 +138,7 @@ $cb_template->assign_vars(array(
 );
 
 //dump corpses
-foreach($corpses as $corpse) {
+foreach($corpse_zones as $corpse) {
 
    //prepare the link to the map
    $find = array(
