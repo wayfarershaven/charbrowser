@@ -31,12 +31,12 @@
  *   April 6, 2020 - Maudigan
  *     Make the way bags display more dynamic so they can be resized easily
  *                      
- ***************************************************************************/ 
+ ***************************************************************************/
 
- /* ----------------------------------------------
-         wraps around the entire page
-         to help prevent naming collisions
-         added 9/23/2018
+/* ----------------------------------------------
+        wraps around the entire page
+        to help prevent naming collisions
+        added 9/23/2018
 -------------------------------------------------*/
 #charbrowser {
 }
@@ -45,7 +45,7 @@
    background-image: url(../images/cb_drag_handle.png);
    background-position: 0px 0px;
 }
- 
+
 #charbrowser * {
    margin: 0px;
    padding: 0px;
@@ -66,7 +66,7 @@
    padding-bottom: 5px;
    padding-left: 15px;
    padding-right: 15px;
-   border-collapse: collapse; 
+   border-collapse: collapse;
    text-align: center;
 }
 
@@ -81,18 +81,18 @@
 
 /* webkit scroll*/
 #charbrowser  ::-webkit-scrollbar {
-  width: 5px;
+   width: 5px;
 }
 #charbrowser  ::-webkit-scrollbar-track {
    background: none;
 }
 #charbrowser  ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-  background: #7b714a;
+   background: #888;
+   border-radius: 5px;
+   background: #7b714a;
 }
 #charbrowser  ::-webkit-scrollbar-thumb:hover {
-  background: #bbb480;
+   background: #bbb480;
 }
 
 
@@ -121,21 +121,21 @@
       bar chart style on guild/server page
 -------------------------------------------------*/
 #charbrowser .CB_Chart_Bar {
-    width: 100%;
-    position: relative;
+   width: 100%;
+   position: relative;
 }
 #charbrowser .CB_Chart_Bar DIV SPAN {
    position: absolute;
    left: 26px;
    top: 6px;
-   text-shadow: 1px 1px 1px black, 
-                0px 1px 1px black, 
-                -1px 1px 1px black, 
-                1px 0px 1px black, 
-                -1px 0px 1px black, 
-                1px -1px 1px black, 
-                0px -1px 1px black, 
-                -1px -1px 1px black;
+   text-shadow: 1px 1px 1px black,
+   0px 1px 1px black,
+   -1px 1px 1px black,
+   1px 0px 1px black,
+   -1px 0px 1px black,
+   1px -1px 1px black,
+   0px -1px 1px black,
+   -1px -1px 1px black;
    opacity: 1;
 }
 #charbrowser .CB_Chart_Bar DIV {
@@ -172,7 +172,7 @@
    font-weight: 100;
    letter-spacing: 3px;
    font-size: 10pt;
-    margin-bottom: 9px;
+   margin-bottom: 9px;
 }
 #charbrowser .CB_is_old  P:nth-child(3) {
    font-size: 10pt;
@@ -204,7 +204,7 @@
 
 /* ----------------------------------------------
       header and body styles on every page
--------------------------------------------------*/ 
+-------------------------------------------------*/
 BODY.CB_Body {
    padding: 0px;
    margin: 0px;
@@ -251,23 +251,23 @@ BODY.CB_Body {
    max-height: 80px;
 }
 
-    
+
 #charbrowser DIV.PositionHeaderSimple FORM INPUT[type=submit],
 #charbrowser HEADER FORM INPUT[type=submit] {
-    border: 1px solid #8aa3ff;
-    background: none;
-    color: #8aa3ff;
-    font-size: 7pt;
-    height: 17px;
-    width: 40px;
-    display: inline-block;
-    vertical-align: middle;
+   border: 1px solid #8aa3ff;
+   background: none;
+   color: #8aa3ff;
+   font-size: 7pt;
+   height: 17px;
+   width: 40px;
+   display: inline-block;
+   vertical-align: middle;
 }
 #charbrowser DIV.PositionHeaderSimple FORM INPUT[type=submit]:hover,
 #charbrowser HEADER FORM INPUT[type=submit]:hover {
-    color: #b9c8ff;
-    border: 1px dotted #b9c8ff;
-    background-color: rgba(255, 255, 255, 0.2);
+   color: #b9c8ff;
+   border: 1px dotted #b9c8ff;
+   background-color: rgba(255, 255, 255, 0.2);
 }
 #charbrowser DIV.PositionHeaderSimple FORM INPUT[type=text],
 #charbrowser HEADER FORM INPUT[type=text] {
@@ -279,7 +279,7 @@ BODY.CB_Body {
    padding: 0px 10px 0px 10px;
    margin: 0px 20px 0px 3px;
    font-family:arial;
-   font-size: 8pt; 
+   font-size: 8pt;
    display: inline-block;
    vertical-align: middle;
 }
@@ -290,7 +290,7 @@ BODY.CB_Body {
    padding: 0px;
    margin: 0px 2px 0px 10px;
    font-family:arial;
-   font-size: 9pt; 
+   font-size: 9pt;
    font-weight: 600;
    display: inline-block;
    vertical-align: middle;
@@ -313,7 +313,7 @@ BODY.CB_Body {
 #charbrowser DIV.PositionHeaderSimple NAV UL LI:first-child,
 #charbrowser HEADER NAV UL LI:first-child {
    border-left: none;
-} 
+}
 #charbrowser DIV.PositionHeaderSimple NAV UL LI A:link,
 #charbrowser DIV.PositionHeaderSimple NAV UL LI A:visited,
 #charbrowser DIV.PositionHeaderSimple NAV UL LI A:active,
@@ -356,67 +356,67 @@ BODY.CB_Body {
 }
 #charbrowser DIV.db_query
 {
-  background-color: #444;
-  border-radius:  10px;
-  padding: 15px;
-  margin: 15px auto;
+   background-color: #444;
+   border-radius:  10px;
+   padding: 15px;
+   margin: 15px auto;
 }
 #charbrowser DIV.db_sql,
 #charbrowser DIV.db_time,
-#charbrowser TABLE.db_explain  
+#charbrowser TABLE.db_explain
 {
-  margin: 20px;
+   margin: 20px;
 }
 
-#charbrowser TABLE.db_explain  
+#charbrowser TABLE.db_explain
 {
-  border-collapse: collapse;
+   border-collapse: collapse;
 }
 
-#charbrowser TABLE.db_explain  TD 
+#charbrowser TABLE.db_explain  TD
 {
-  border-top: 1px #777 solid;
+   border-top: 1px #777 solid;
 }
 
 #charbrowser TABLE.db_explain  TD,
-#charbrowser TABLE.db_explain  TH 
+#charbrowser TABLE.db_explain  TH
 {
-  padding: 5px;
+   padding: 5px;
 }
 
 #charbrowser DIV.db_sql P,
 #charbrowser DIV.db_time P,
 #charbrowser TABLE.db_explain  TD
 {
-  color: #aaa;
-  font-family: "Courier New";
-  font-size: 10pt;
+   color: #aaa;
+   font-family: "Courier New";
+   font-size: 10pt;
 }
 
 #charbrowser TABLE.db_explain  THEAD TH:nth-child(even),
 #charbrowser TABLE.db_explain  TBODY TD:nth-child(even)
 {
-  background-color: #666;
+   background-color: #666;
 }
 
 
 #charbrowser TABLE.db_explain  TH
 {
-  color: #bbb;
-  font-family: "Courier New";
-  font-size: 10pt;
-  font-weight: bold;
+   color: #bbb;
+   font-family: "Courier New";
+   font-size: 10pt;
+   font-weight: bold;
 }
 
 #charbrowser DIV.db_sql H1,
 #charbrowser DIV.db_time H1,
 #charbrowser TABLE.db_explain CAPTION
 {
-  color: #cca;
-  font-family: "Courier New";
-  font-weight: bold;
-  font-size: 12pt;
-  text-align: left;
+   color: #cca;
+   font-family: "Courier New";
+   font-weight: bold;
+   font-size: 12pt;
+   text-align: left;
 }
 
 
@@ -424,14 +424,14 @@ BODY.CB_Body {
               checkboxes on flags/corpses
 -------------------------------------------------*/
 #charbrowser .CB_CheckBox_0 {
-  background-image:url(../images/check_0.png);
-  display: inline-block;
+   background-image:url(../images/check_0.png);
+   display: inline-block;
 }
-#charbrowser .CB_CheckBox_1 {  
-  background-image:url(../images/check_1.png);
+#charbrowser .CB_CheckBox_1 {
+   background-image:url(../images/check_1.png);
 }
 #charbrowser .CB_CheckBox_0,
-#charbrowser .CB_CheckBox_1 {  
+#charbrowser .CB_CheckBox_1 {
    height: 16px;
    min-width: 16px;
    margin: 1px;
@@ -442,7 +442,7 @@ BODY.CB_Body {
 #charbrowser .CB_CheckBox_0 SPAN,
 #charbrowser .CB_CheckBox_1 SPAN,
 #charbrowser .CB_CheckBox_0 A,
-#charbrowser .CB_CheckBox_1 A {  
+#charbrowser .CB_CheckBox_1 A {
    padding-left: 20px;
 }
 
@@ -470,12 +470,12 @@ BODY.CB_Body {
    border-left: 1px solid #40434e;
    border-right: 1px solid #858996;
    border-top-right-radius: 15px;
-   border-top-left-radius: 15px;    
+   border-top-left-radius: 15px;
    color: #808080;
    background-color: rgba(255,255,255,0.0);
 }
 
-#charbrowser NAV.CB_Tab_Box UL LI:hover {  
+#charbrowser NAV.CB_Tab_Box UL LI:hover {
    color: #ffffff;
    background-color: rgba(255,255,255,0.2);
 }
@@ -507,10 +507,10 @@ BODY.CB_Body {
    vertical-align: top;
    margin-top: 0px;
    margin-left: 0px;
-   margin-right: 0px;   
+   margin-right: 0px;
    margin-bottom: 5px;
    padding: 0px;
-   border-collapse: collapse; 
+   border-collapse: collapse;
 }
 
 
@@ -532,7 +532,7 @@ BODY.CB_Body {
    padding-bottom: 5px;
    padding-left: 15px;
    padding-right: 15px;
-   border-collapse: collapse; 
+   border-collapse: collapse;
    text-align: center;
    white-space: nowrap;
 }
@@ -547,7 +547,7 @@ BODY.CB_Body {
    padding-bottom: 2px;
    padding-left: 15px;
    padding-right: 15px;
-   border-collapse: collapse; 
+   border-collapse: collapse;
    text-align: center;
 }
 
@@ -558,7 +558,7 @@ BODY.CB_Body {
    vertical-align: top;
    margin: 0px;
    padding: 5px 15px;
-   border-collapse: collapse; 
+   border-collapse: collapse;
    text-align: center;
 }
 
@@ -575,30 +575,30 @@ BODY.CB_Body {
               anchor stylesheets
 ------------------------------------------------- */
 
-#charbrowser A { 
-   text-decoration: none; 
+#charbrowser A {
+   text-decoration: none;
    font-weight: none;
-   color: #7b714a; 
+   color: #7b714a;
 }
-#charbrowser A:link { 
-   text-decoration: none; 
+#charbrowser A:link {
+   text-decoration: none;
    font-weight: none;
-   color: #7b714a; 
+   color: #7b714a;
 }
-#charbrowser A:active { 
-   text-decoration: none; 
+#charbrowser A:active {
+   text-decoration: none;
    font-weight: none;
-   color: #7b714a; 
+   color: #7b714a;
 }
-#charbrowser A:visited { 
-   text-decoration: none; 
+#charbrowser A:visited {
+   text-decoration: none;
    font-weight: none;
-   color: #6b614a; 
+   color: #6b614a;
 }
-#charbrowser A:hover { 
-   text-decoration: none; 
+#charbrowser A:hover {
+   text-decoration: none;
    font-weight: none;
-   color: #7b714a; 
+   color: #7b714a;
 }
 
 /* ----------------------------------------------
@@ -623,7 +623,7 @@ BODY.CB_Body {
    display: block;
    font-size: 9px;
    line-height: 21px;
-   text-decoration: none; 
+   text-decoration: none;
    font-weight: none;
    color: #ffffff;
    opacity: 1.0;
@@ -676,7 +676,7 @@ BODY.CB_Body {
    display: inline-block;
    font-size: 9px;
    line-height: 40px;
-   text-decoration: none; 
+   text-decoration: none;
    font-weight: none;
    color: #ffffff;
    opacity: 1.0;
@@ -717,7 +717,7 @@ BODY.CB_Body {
    text-align: center;
    display: block;
    margin: 10px;
- }
+}
 #charbrowser .WindowTitleBar {
    position: absolute;
    overflow: hidden;
@@ -728,7 +728,7 @@ BODY.CB_Body {
    font-family: arial;
    font-size: 9pt;
    line-height: 21px;
-   text-align: center;   
+   text-align: center;
    color: #FFFFFF;
    padding: 0px 13px;
    background-image: url(../images/rightt.gif), url(../images/leftt.gif), url(../images/midt.gif);
@@ -736,14 +736,14 @@ BODY.CB_Body {
    background-clip: padding-box, padding-box, content-box;
    background-position-x: right, left, left;
    display: block;
-   margin: 0px 0px;    
+   margin: 0px 0px;
 }
 
 #charbrowser .WindowSimple,
 #charbrowser .WindowSimpleFancy,
 #charbrowser .WindowComplex,
 #charbrowser .WindowComplexFancy,
-#charbrowser .WindowComplexGM { 
+#charbrowser .WindowComplexGM {
    position: relative;
    margin: 0 auto;
    background-image: url(../images/light.gif);
@@ -765,15 +765,15 @@ BODY.CB_Body {
 #charbrowser .WindowComplexFancy:before,
 #charbrowser .WindowSimpleFancy:before,
 #charbrowser .WindowSimple:before {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    padding: 19px;
-    left: -12px;
-    right: -12px;
-    top: -5px;
-    bottom: -11px;
-    pointer-events: none;
+   content: " ";
+   position: absolute;
+   z-index: -1;
+   padding: 19px;
+   left: -12px;
+   right: -12px;
+   top: -5px;
+   bottom: -11px;
+   pointer-events: none;
 }
 
 #charbrowser .WindowComplex:before,
@@ -789,10 +789,10 @@ BODY.CB_Body {
 
 #charbrowser .WindowSimpleFancy:before,
 #charbrowser .WindowSimple:before {
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position-x: left, right, left, right;
-    background-position-y: top, top, bottom, bottom;
-    background-clip: padding-box, padding-box, padding-box, padding-box;
+   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+   background-position-x: left, right, left, right;
+   background-position-y: top, top, bottom, bottom;
+   background-clip: padding-box, padding-box, padding-box, padding-box;
 }
 
 #charbrowser .WindowComplex:before,
@@ -805,18 +805,18 @@ BODY.CB_Body {
 }
 
 #charbrowser .WindowSimple:before {
-    background-image: url(../images/cb_simple_window_corner_tl.png), url(../images/cb_simple_window_corner_tr.png), url(../images/cb_simple_window_corner_bl.png), url(../images/cb_simple_window_corner_br.png);
+   background-image: url(../images/cb_simple_window_corner_tl.png), url(../images/cb_simple_window_corner_tr.png), url(../images/cb_simple_window_corner_bl.png), url(../images/cb_simple_window_corner_br.png);
 }
 
 #charbrowser .WindowSimpleFancy:before {
-    background-image: url(../images/cb_window_corner_tl.png), url(../images/cb_window_corner_tr.png), url(../images/cb_window_corner_bl.png), url(../images/cb_window_corner_br.png);
+   background-image: url(../images/cb_window_corner_tl.png), url(../images/cb_window_corner_tr.png), url(../images/cb_window_corner_bl.png), url(../images/cb_window_corner_br.png);
 }
 
 
 #charbrowser .WindowNestedTanTitleBar {
    font-family: arial;
    font-size: 9pt;
-   text-align: center;   
+   text-align: center;
    color: #FFFFFF;
    padding: 0;
    display: block;
@@ -858,8 +858,8 @@ BODY.CB_Body {
 }
 
 #charbrowser .WindowClose {
-   position: absolute; 
-   right: 10px; 
+   position: absolute;
+   right: 10px;
    top: 4px;
    cursor: pointer;
    background-image: url(../images/cb_icon_popup_close.png);
@@ -871,8 +871,8 @@ BODY.CB_Body {
 }
 
 #charbrowser .WindowCloseAll {
-   position: absolute; 
-   right: 27px; 
+   position: absolute;
+   right: 27px;
    top: 4px;
    cursor: pointer;
    background-image: url(../images/cb_icon_popup_closeall.png);
@@ -884,8 +884,8 @@ BODY.CB_Body {
 }
 
 #charbrowser .WindowTile {
-   position: absolute; 
-   right: 44px; 
+   position: absolute;
+   right: 44px;
    top: 4px;
    cursor: pointer;
    background-image: url(../images/cb_icon_popup_tile.png);
@@ -903,13 +903,13 @@ BODY.CB_Body {
 ------------------------------------------------- */
 #charbrowser INPUT[type=text],
 #charbrowser SELECT {
-  border: 1px #555555 solid;
-  background-color: #0b0b10;
-  height: 17px;
-  color: #FFFFFF;
-  padding: 1px 5px 1px 5px;
-  font-family:arial;
-  font-size: 8pt; 
+   border: 1px #555555 solid;
+   background-color: #0b0b10;
+   height: 17px;
+   color: #FFFFFF;
+   padding: 1px 5px 1px 5px;
+   font-family:arial;
+   font-size: 8pt;
 }
 
 /* ----------------------------------------------
@@ -925,7 +925,7 @@ BODY.CB_Body {
    left: 5px;
 }
 #charbrowser .PositionInventory {
-   position: absolute; 
+   position: absolute;
    width: 432px;
    height: 467px;
    top: 0px;
@@ -978,14 +978,14 @@ BODY.CB_Body {
 
 
 #charbrowser .PositionBank {
-   position: absolute; 
+   position: absolute;
    width: 252px;
    height: 287px;
    top: 0px;
    left: 600px;
 }
 #charbrowser .PositionBag {
-   position: relative; 
+   position: relative;
    width: 84px;
    margin: 0 auto;
    padding-left: 6px;
@@ -999,30 +999,30 @@ BODY.CB_Body {
 }
 
 #charbrowser .PositionCharacter  DIV.CB_Char_Monogram {
-  background-image: url(../images/dark.gif);
-  border: 1px #444444 solid;
-  position: absolute;
-  text-align: center;
-  top: 57px;
-  left: 215px;
-  width: 82px;
-  height: 168px;
-  max-height: 146px;
-  max-width: 80px;
-  padding: 20px 0px 0px 0px;
-  font-family:		arial;
-  font-size: 9pt ;
-  color: #FFFFFF ;
+   background-image: url(../images/dark.gif);
+   border: 1px #444444 solid;
+   position: absolute;
+   text-align: center;
+   top: 57px;
+   left: 215px;
+   width: 82px;
+   height: 168px;
+   max-height: 146px;
+   max-width: 80px;
+   padding: 20px 0px 0px 0px;
+   font-family:		arial;
+   font-size: 9pt ;
+   color: #FFFFFF ;
 }
 
 #charbrowser .PositionCharacter  TABLE.CB_Char_Stats {
-  height: 370px;
-  width: 150px;
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  top: 14px;
-  left: 10px;
+   height: 370px;
+   width: 150px;
+   margin: 0px;
+   padding: 0px;
+   position: absolute;
+   top: 14px;
+   left: 10px;
 }
 #charbrowser .PositionCharacter  TABLE.CB_Char_Stats TBODY TR TD {
    text-align: left;
@@ -1034,14 +1034,14 @@ BODY.CB_Body {
    height: 2px;
    margin: 0px;
    padding: 0px;
-   border-collapse: collapse; 
+   border-collapse: collapse;
 }
 #charbrowser .PositionCharacter  TABLE.CB_Char_Stats TBODY TR TD.CB_Char_Stats_Spacer {
    width: 100%;
    height: 4px;
    margin: 0px;
    padding: 0px;
-   border-collapse: collapse; 
+   border-collapse: collapse;
 }
 #charbrowser .PositionCharacter  TABLE.CB_Char_Stats2 {
    height: 57px;
@@ -1057,7 +1057,7 @@ BODY.CB_Body {
 }
 
 #charbrowser .PositionItem {
-   position: relative; 
+   position: relative;
    margin: 0 auto;
    width: 350px;
 }
@@ -1082,8 +1082,8 @@ BODY.CB_Body {
    display: inline-block;
    width: 420px;
 }
-#charbrowser .PositionAAs DIV.PositionAALeft TABLE {  
-   display: none;   
+#charbrowser .PositionAAs DIV.PositionAALeft TABLE {
+   display: none;
 }
 #charbrowser .PositionAALeft TABLE.CB_Table TBODY TR TD:nth-child(1),
 #charbrowser .PositionAALeft TABLE.CB_Table THEAD TR TH:nth-child(1) {
@@ -1154,18 +1154,18 @@ BODY.CB_Body {
 #charbrowser .CB_Charmove_addrow A:visited,
 #charbrowser .CB_Charmove_addrow A:active,
 #charbrowser .CB_Charmove_addrow A:hover {
-    color: #8aa3ff;
-    border: 1px dotted #8aa3ff;
-    padding: 3px;
-    margin: 5px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: none;
+   color: #8aa3ff;
+   border: 1px dotted #8aa3ff;
+   padding: 3px;
+   margin: 5px;
+   display: inline-block;
+   text-decoration: none;
+   background-color: none;
 }
 #charbrowser .CB_Charmove_addrow A:hover {
-    color: #b9c8ff;
-    border: 1px dotted #b9c8ff;
-    background-color: rgba(255, 255, 255, 0.2);
+   color: #b9c8ff;
+   border: 1px dotted #b9c8ff;
+   background-color: rgba(255, 255, 255, 0.2);
 }
 #charbrowser .CB_Charmove_row {
    position: relative;
@@ -1225,18 +1225,18 @@ BODY.CB_Body {
    margin: 0 auto;
    position: relative;
 }
-#charbrowser .PositionGuild DIV.CB_GuildTabBoxes {  
-   display: none;   
+#charbrowser .PositionGuild DIV.CB_GuildTabBoxes {
+   display: none;
 }
-#charbrowser .PositionGuild #tabbox1 THEAD TR TH:nth-child(1), 
+#charbrowser .PositionGuild #tabbox1 THEAD TR TH:nth-child(1),
 #charbrowser .PositionGuild #tabbox1 TBODY TR TD:nth-child(1),
-#charbrowser .PositionGuild #tabbox2 THEAD TR TH:nth-child(1), 
+#charbrowser .PositionGuild #tabbox2 THEAD TR TH:nth-child(1),
 #charbrowser .PositionGuild #tabbox2 TBODY TR TD:nth-child(1),
-#charbrowser .PositionGuild #tabbox2 THEAD TR TH:nth-child(2), 
+#charbrowser .PositionGuild #tabbox2 THEAD TR TH:nth-child(2),
 #charbrowser .PositionGuild #tabbox2 TBODY TR TD:nth-child(2),
-#charbrowser .PositionGuild #tabbox2 THEAD TR TH:nth-child(3), 
+#charbrowser .PositionGuild #tabbox2 THEAD TR TH:nth-child(3),
 #charbrowser .PositionGuild #tabbox2 TBODY TR TD:nth-child(3),
-#charbrowser .PositionGuild #tabbox2 THEAD TR TH:nth-child(4), 
+#charbrowser .PositionGuild #tabbox2 THEAD TR TH:nth-child(4),
 #charbrowser .PositionGuild #tabbox2 TBODY TR TD:nth-child(4) {
    text-align: left;
 }
@@ -1247,18 +1247,18 @@ BODY.CB_Body {
    position: relative;
 }
 #charbrowser .PositionServer TABLE.CB_TopTable,
-#charbrowser .PositionServer DIV.CB_ServerTabBoxes {  
-   display: none;   
+#charbrowser .PositionServer DIV.CB_ServerTabBoxes {
+   display: none;
 }
-#charbrowser .PositionServer #tabbox1 THEAD TR TH:nth-child(1), 
+#charbrowser .PositionServer #tabbox1 THEAD TR TH:nth-child(1),
 #charbrowser .PositionServer #tabbox1 TBODY TR TD:nth-child(1),
-#charbrowser .PositionServer #tabbox2 THEAD TR TH:nth-child(1), 
+#charbrowser .PositionServer #tabbox2 THEAD TR TH:nth-child(1),
 #charbrowser .PositionServer #tabbox2 TBODY TR TD:nth-child(1),
-#charbrowser .PositionServer #tabbox2 THEAD TR TH:nth-child(2), 
+#charbrowser .PositionServer #tabbox2 THEAD TR TH:nth-child(2),
 #charbrowser .PositionServer #tabbox2 TBODY TR TD:nth-child(2),
-#charbrowser .PositionServer #tabbox2 THEAD TR TH:nth-child(3), 
+#charbrowser .PositionServer #tabbox2 THEAD TR TH:nth-child(3),
 #charbrowser .PositionServer #tabbox2 TBODY TR TD:nth-child(3),
-#charbrowser .PositionServer #tabbox2 THEAD TR TH:nth-child(4), 
+#charbrowser .PositionServer #tabbox2 THEAD TR TH:nth-child(4),
 #charbrowser .PositionServer #tabbox2 TBODY TR TD:nth-child(4) {
    text-align: left;
 }
@@ -1390,48 +1390,48 @@ BODY.CB_Body {
    margin-left: 0px;
    margin-right: 0px;
 }
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue {   
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue {
    min-height: 300px;
    padding: 30px;
 }
-#charbrowser .PositionSignatureBuilder DIV.CB_SigTabBoxes {  
-   display: none;   
+#charbrowser .PositionSignatureBuilder DIV.CB_SigTabBoxes {
+   display: none;
 }
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox1 DIV {  
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox1 DIV {
    display: inline-block;
-   width: 130px;  
-   padding-bottom: 30px; 
+   width: 130px;
+   padding-bottom: 30px;
 }
 #charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox1 DIV INPUT,
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox1 DIV SELECT {  
-   width: 110px;   
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox1 DIV SELECT {
+   width: 110px;
 }
 #charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox1 DIV:nth-child(1) {
    display: block;
    width: initial;
 }
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox1 DIV:nth-child(1) INPUT {  
-   width: 200px;   
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox1 DIV:nth-child(1) INPUT {
+   width: 200px;
 }
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox2 DIV {  
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox2 DIV {
    display: inline-block;
-   width: 170px;  
-   padding-bottom: 30px; 
+   width: 170px;
+   padding-bottom: 30px;
 }
 #charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox2 DIV INPUT,
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox2 DIV SELECT {  
-   width: 150px;   
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox2 DIV SELECT {
+   width: 150px;
 }
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox3 DIV {  
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox3 DIV {
    display: inline-block;
-   width: 100px;  
-   padding-bottom: 30px; 
+   width: 100px;
+   padding-bottom: 30px;
 }
 #charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox3 DIV INPUT,
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox3 DIV SELECT {  
-   width: 80px;   
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox3 DIV SELECT {
+   width: 80px;
 }
-#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox4 TEXTAREA {  
+#charbrowser .PositionSignatureBuilder DIV.WindowNestedBlue #tabbox4 TEXTAREA {
    border: 1px #555555 solid;
    background-color: #0b0b10;
    height: 40px;
@@ -1439,7 +1439,7 @@ BODY.CB_Body {
    color: #FFFFFF;
    padding: 1px 5px 1px 5px;
    font-family:arial;
-   font-size: 8pt;  
+   font-size: 8pt;
    margin-bottom: 10px;
 }
 #charbrowser .PositionSignatureBuilder #nameerror {
@@ -1477,7 +1477,7 @@ BODY.CB_Body {
 }
 
 #charbrowser .CB_HoverChild {
-   position: absolute; 
+   position: absolute;
    margin: 0;
    display: none;
 }
@@ -1529,14 +1529,14 @@ BODY.CB_Body {
 
 /* button to open bags in inventory */
 #charbrowser .BagOpenSlot {
-  height: 10px;
-  width: 10px;
-  border: 0px ;
-  cursor: pointer;
-  background-image: url(../images/cb_bag_icon.png);
-  margin: 0;
-  padding: 0;
-  position: absolute;
+   height: 10px;
+   width: 10px;
+   border: 0px ;
+   cursor: pointer;
+   background-image: url(../images/cb_bag_icon.png);
+   margin: 0;
+   padding: 0;
+   position: absolute;
 }
 
 
@@ -1633,8 +1633,8 @@ BODY.CB_Body {
 ------------------------------------------------- */
 
 #charbrowser .slotlocinspect {
-  top: 1px;
-  right: 3px;
+   top: 1px;
+   right: 3px;
 }
 #charbrowser .slotlocinspectaug {
    top: 4px;
@@ -1644,307 +1644,307 @@ BODY.CB_Body {
    height: 30px;
 }
 #charbrowser .slotloc1 {
-  top: 14px;
-  left: 172px;
+   top: 14px;
+   left: 172px;
 }
 #charbrowser .slotloc2 {
-  top: 14px;
-  left: 215px;
+   top: 14px;
+   left: 215px;
 }
 #charbrowser .slotloc3 {
-  top: 14px;
-  left: 258px;
+   top: 14px;
+   left: 258px;
 }
 #charbrowser .slotloc4 {
-  top: 14px;
-  left: 302px;
+   top: 14px;
+   left: 302px;
 }
 #charbrowser .slotloc17 {
-  top: 57px;
-  left: 172px;
+   top: 57px;
+   left: 172px;
 }
 #charbrowser .slotloc5 {
-  top: 57px;
-  left: 302px;
+   top: 57px;
+   left: 302px;
 }
 #charbrowser .slotloc7 {
-  top: 100px;
-  left: 172px;
+   top: 100px;
+   left: 172px;
 }
 #charbrowser .slotloc8 {
-  top: 100px;
-  left: 302px;
+   top: 100px;
+   left: 302px;
 }
 #charbrowser .slotloc20 {
-  top: 143px;
-  left: 172px;
+   top: 143px;
+   left: 172px;
 }
 #charbrowser .slotloc6 {
-  top: 143px;
-  left: 302px;
+   top: 143px;
+   left: 302px;
 }
 #charbrowser .slotloc9 {
-  top: 186px;
-  left: 172px;
+   top: 186px;
+   left: 172px;
 }
 #charbrowser .slotloc10 {
-  top: 186px;
-  left: 302px;
+   top: 186px;
+   left: 302px;
 }
 #charbrowser .slotloc18 {
-  top: 229px;
-  left: 172px;
+   top: 229px;
+   left: 172px;
 }
 #charbrowser .slotloc12 {
-  top: 229px;
-  left: 215px;
+   top: 229px;
+   left: 215px;
 }
 #charbrowser .slotloc0 {
-  top: 229px;
-  left: 258px;
+   top: 229px;
+   left: 258px;
 }
 #charbrowser .slotloc19 {
-  top: 229px;
-  left: 302px;
+   top: 229px;
+   left: 302px;
 }
 #charbrowser .slotloc15 {
-  top: 272px;
-  left: 215px;
+   top: 272px;
+   left: 215px;
 }
 #charbrowser .slotloc16 {
-  top: 272px;
-  left: 258px;
+   top: 272px;
+   left: 258px;
 }
 #charbrowser .slotloc13 {
-  top: 315px;
-  left: 172px;
+   top: 315px;
+   left: 172px;
 }
 #charbrowser .slotloc14 {
-  top: 315px;
-  left: 215px;
+   top: 315px;
+   left: 215px;
 }
 #charbrowser .slotloc11 {
-  top: 315px;
-  left: 258px;
+   top: 315px;
+   left: 258px;
 }
 
-#charbrowser .slotloc21 { 
-  top: 315px;
-  left: 302px; 
-} 
-#charbrowser .slotloc22 {
-  top: 315px;
-  left: 302px;
+#charbrowser .slotloc21 {
+   top: 272px;
+   left: 302px;
 }
 #charbrowser .slotloc22 {
-  top: 186px;
-  left: 352px;
+   top: 315px;
+   left: 302px;
 }
 #charbrowser .slotloc23 {
-  top: 186px;
-  left: 395px;
+   top: 186px;
+   left: 352px;
 }
 #charbrowser .slotloc24 {
-  top: 229px;
-  left: 352px;
+   top: 186px;
+   left: 395px;
 }
 #charbrowser .slotloc25 {
-  top: 229px;
-  left: 395px;
+   top: 229px;
+   left: 352px;
 }
 #charbrowser .slotloc26 {
-  top: 272px;
-  left: 352px;
+   top: 229px;
+   left: 395px;
 }
 #charbrowser .slotloc27 {
-  top: 272px;
-  left: 395px;
+   top: 272px;
+   left: 352px;
 }
 #charbrowser .slotloc28 {
-  top: 315px;
-  left: 352px;
+   top: 272px;
+   left: 395px;
 }
 #charbrowser .slotloc29 {
-  top: 315px;
-  left: 395px;
+   top: 315px;
+   left: 352px;
+}
+#charbrowser .slotloc30 {
+   top: 315px;
+   left: 395px;
 }
 #charbrowser .slotloc2000 {
-  top: 20px;
-  left: 6px;
+   top: 20px;
+   left: 6px;
 }
 #charbrowser .slotloc2001 {
-  top: 63px;
-  left: 6px;
+   top: 63px;
+   left: 6px;
 }
 #charbrowser .slotloc2002 {
-  top: 106px;
-  left: 6px;
+   top: 106px;
+   left: 6px;
 }
 #charbrowser .slotloc2003 {
-  top: 148px;
-  left: 6px;
+   top: 148px;
+   left: 6px;
 }
 #charbrowser .slotloc2004 {
-  top: 20px;
-  left: 50px;
+   top: 20px;
+   left: 50px;
 }
 #charbrowser .slotloc2005 {
-  top: 63px;
-  left: 50px;
+   top: 63px;
+   left: 50px;
 }
 #charbrowser .slotloc2006 {
-  top: 106px;
-  left: 50px;
+   top: 106px;
+   left: 50px;
 }
 #charbrowser .slotloc2007 {
-  top: 148px;
-  left: 50px;
+   top: 148px;
+   left: 50px;
 }
 #charbrowser .slotloc2008 {
-  top: 20px;
-  left: 97px;
+   top: 20px;
+   left: 97px;
 }
 #charbrowser .slotloc2009 {
-  top: 63px;
-  left: 97px;
+   top: 63px;
+   left: 97px;
 }
 #charbrowser .slotloc2010 {
-  top: 106px;
-  left: 97px;
+   top: 106px;
+   left: 97px;
 }
 #charbrowser .slotloc2011 {
-  top: 148px;
-  left: 97px;
+   top: 148px;
+   left: 97px;
 }
 #charbrowser .slotloc2012 {
-  top: 20px;
-  left: 141px;
+   top: 20px;
+   left: 141px;
 }
 #charbrowser .slotloc2013 {
-  top: 63px;
-  left: 141px;
+   top: 63px;
+   left: 141px;
 }
 #charbrowser .slotloc2014 {
-  top: 106px;
-  left: 141px;
+   top: 106px;
+   left: 141px;
 }
 #charbrowser .slotloc2015 {
-  top: 148px;
-  left: 141px;
+   top: 148px;
+   left: 141px;
 }
 #charbrowser .slotloc2016 {
-  top: 20px;
-  left: 188px;
+   top: 20px;
+   left: 188px;
 }
 #charbrowser .slotloc2017 {
-  top: 63px;
-  left: 188px;
+   top: 63px;
+   left: 188px;
 }
 #charbrowser .slotloc2018 {
-  top: 106px;
-  left: 188px;
+   top: 106px;
+   left: 188px;
 }
 #charbrowser .slotloc2019 {
-  top: 148px;
-  left: 188px;
+   top: 148px;
+   left: 188px;
 }
 #charbrowser .slotloc2020 {
-  top: 20px;
-  left: 232px;
+   top: 20px;
+   left: 232px;
 }
 #charbrowser .slotloc2021 {
-  top: 63px;
-  left: 232px;
+   top: 63px;
+   left: 232px;
 }
 #charbrowser .slotloc2022 {
-  top: 106px;
-  left: 232px;
+   top: 106px;
+   left: 232px;
 }
 #charbrowser .slotloc2023 {
-  top: 148px;
-  left: 232px;
+   top: 148px;
+   left: 232px;
 }
 #charbrowser .slotloc2500 {
-  top: 240px;
-  left: 6px;
+   top: 240px;
+   left: 6px;
 }
 #charbrowser .slotloc2501 {
-  top: 240px;
-  left: 50px;
+   top: 240px;
+   left: 50px;
 }
 
 /* ----------------------------------------------
          inventory slot images
 ------------------------------------------------- */
 #charbrowser .slotimage0 {
-  background-image: url(../images/slots/slot_0.gif);
+   background-image: url(../images/slots/slot_0.gif);
 }
 #charbrowser .slotimage1 {
-  background-image: url(../images/slots/slot_1.gif);
+   background-image: url(../images/slots/slot_1.gif);
 }
 #charbrowser .slotimage2 {
-  background-image: url(../images/slots/slot_2.gif);
+   background-image: url(../images/slots/slot_2.gif);
 }
 #charbrowser .slotimage3 {
-  background-image: url(../images/slots/slot_3.gif);
+   background-image: url(../images/slots/slot_3.gif);
 }
 #charbrowser .slotimage4 {
-  background-image: url(../images/slots/slot_4.gif);
+   background-image: url(../images/slots/slot_4.gif);
 }
 #charbrowser .slotimage5 {
-  background-image: url(../images/slots/slot_5.gif);
+   background-image: url(../images/slots/slot_5.gif);
 }
 #charbrowser .slotimage6 {
-  background-image: url(../images/slots/slot_6.gif);
+   background-image: url(../images/slots/slot_6.gif);
 }
 #charbrowser .slotimage7 {
-  background-image: url(../images/slots/slot_7.gif);
+   background-image: url(../images/slots/slot_7.gif);
 }
 #charbrowser .slotimage8 {
-  background-image: url(../images/slots/slot_8.gif);
+   background-image: url(../images/slots/slot_8.gif);
 }
 #charbrowser .slotimage9 {
-  background-image: url(../images/slots/slot_9.gif);
+   background-image: url(../images/slots/slot_9.gif);
 }
 #charbrowser .slotimage10 {
-  background-image: url(../images/slots/slot_10.gif);
+   background-image: url(../images/slots/slot_10.gif);
 }
 #charbrowser .slotimage11 {
-  background-image: url(../images/slots/slot_11.gif);
+   background-image: url(../images/slots/slot_11.gif);
 }
 #charbrowser .slotimage12 {
-  background-image: url(../images/slots/slot_12.gif);
+   background-image: url(../images/slots/slot_12.gif);
 }
 #charbrowser .slotimage13 {
-  background-image: url(../images/slots/slot_13.gif);
+   background-image: url(../images/slots/slot_13.gif);
 }
 #charbrowser .slotimage14 {
-  background-image: url(../images/slots/slot_14.gif);
+   background-image: url(../images/slots/slot_14.gif);
 }
 #charbrowser .slotimage15 {
-  background-image: url(../images/slots/slot_15.gif);
+   background-image: url(../images/slots/slot_15.gif);
 }
 #charbrowser .slotimage16 {
-  background-image: url(../images/slots/slot_16.gif);
+   background-image: url(../images/slots/slot_16.gif);
 }
 #charbrowser .slotimage17 {
-  background-image: url(../images/slots/slot_17.gif);
+   background-image: url(../images/slots/slot_17.gif);
 }
 #charbrowser .slotimage18 {
-  background-image: url(../images/slots/slot_18.gif);
+   background-image: url(../images/slots/slot_18.gif);
 }
 #charbrowser .slotimage19 {
-  background-image: url(../images/slots/slot_19.gif);
+   background-image: url(../images/slots/slot_19.gif);
 }
 #charbrowser .slotimage20 {
-  background-image: url(../images/slots/slot_20.gif);
+   background-image: url(../images/slots/slot_20.gif);
 }
 #charbrowser .slotimage21 {
-  background-image: url(../images/slots/slot_21.gif);
+   background-image: url(../images/slots/slot_21.gif);
 }
 #charbrowser .slotimage22 {
-  background-image: url(../images/slots/slot_.gif);
+   background-image: url(../images/slots/slot_22.gif);
 }
 #charbrowser .slotimage {
-  background-image: url(../images/slots/slot_.gif);
+   background-image: url(../images/slots/slot_.gif);
 }
