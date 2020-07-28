@@ -229,7 +229,7 @@ $cb_template->assign_both_vars(array(
    'FT' => number_format($char->getFT()),
    'DS' => number_format($char->getDS()),
    'HASTE' => $char->getHaste(),
-   'DELETED' => (($char->GetValue('deleted_at')) ? " ".$language['CHAR_DELETED']:""),
+   'DELETED' => (($char->GetValue('is_deleted')) ? " ".$language['CHAR_DELETED']:""),
    'FIRST_NAME' => $name,
    'LAST_NAME' => $char->GetValue('last_name'),
    'TITLE' => $char->GetValue('title'),

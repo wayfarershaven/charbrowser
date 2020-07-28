@@ -88,7 +88,7 @@ $cb_template->assign_both_vars(array(
    'FT' => number_format($bot->getFT()),
    'DS' => number_format($bot->getDS()),
    'HASTE' => $bot->getHaste(),
-   'DELETED' => (($char->GetValue('deleted_at')) ? " ".$language['CHAR_DELETED']:""),
+   'DELETED' => (($char->GetValue('is_deleted')) ? " ".$language['CHAR_DELETED']:""),
    'FIRST_NAME' => $botName,
    'LAST_NAME' => $bot->GetValue('last_name'),
    'TITLE' => $bot->GetValue('title'),

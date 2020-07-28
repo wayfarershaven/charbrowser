@@ -77,7 +77,7 @@ if (!is_numeric($start)) cb_message_die($language['MESSAGE_ERROR'],$language['ME
 *********************************************/ 
 //build where clause
 $filters = array();
-if (!$showsoftdelete && !$charbrowser_is_admin_page) $filters[] = "character_data.deleted_at IS NULL"; 
+if (!$showsoftdelete && !$charbrowser_is_admin_page) $filters[] = "character_data.is_deleted = '0'";
 if ($name) $filters[] = "character_data.name LIKE '%".str_replace("_", "%", str_replace(" ","%",$name))."%'"; 
 if ($guild) {
    $filters[] = "guilds.name LIKE '%".str_replace("_", "%", str_replace(" ","%",$guild))."%'";
