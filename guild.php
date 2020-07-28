@@ -59,7 +59,8 @@ FROM guilds
 LEFT JOIN character_data
        ON character_data.id = guilds.leader
 WHERE guilds.name = '%s' 
-AND character_data.deleted_at IS NULL
+AND character_data.level BETWEEN '1' AND '65'
+AND character_data.is_deleted = '0'
 TPL;
  
 $query = sprintf($tpl, $cbsql->escape_string($guild));
@@ -95,7 +96,8 @@ LEFT JOIN guild_ranks
   ON guild_members.rank = guild_ranks.rank 
  AND guild_members.guild_id = guild_ranks.guild_id
 WHERE guild_members.guild_id = '%s' 
-AND character_data.deleted_at IS NULL
+AND character_data.level BETWEEN '1' AND '65'
+AND character_data.is_deleted = '0'
 ORDER BY character_data.name
 TPL;
  
@@ -128,7 +130,8 @@ FROM guild_members
 LEFT JOIN character_data
        ON character_data.id = guild_members.char_id 
 WHERE guild_members.guild_id = '%s' 
-AND character_data.deleted_at IS NULL
+AND character_data.level BETWEEN '1' AND '65'
+AND character_data.is_deleted = '0'
 ORDER BY character_data.name
 TPL;
  
@@ -172,7 +175,8 @@ FROM guild_members
 LEFT JOIN character_data
        ON character_data.id = guild_members.char_id 
 WHERE guild_members.guild_id = '%s' 
-AND character_data.deleted_at IS NULL
+AND character_data.level BETWEEN '1' AND '65'
+AND character_data.is_deleted = '0'
 GROUP BY character_data.class
 TPL;
  
@@ -212,7 +216,8 @@ FROM guild_members
 LEFT JOIN character_data
        ON character_data.id = guild_members.char_id 
 WHERE guild_members.guild_id = '%s' 
-AND character_data.deleted_at IS NULL
+AND character_data.level BETWEEN '1' AND '65'
+AND character_data.is_deleted = '0'
 GROUP BY character_data.level
 TPL;
  

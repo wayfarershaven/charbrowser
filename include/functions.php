@@ -310,12 +310,9 @@ function output_profile_menu($charname, $curpage) {
       array( 'PAGE' => 'keys', 'BUTTON_NAME' => $language['BUTTON_KEYS'], 'PERMISSION' => 1),
       array( 'PAGE' => 'flags', 'BUTTON_NAME' => $language['BUTTON_FLAGS'], 'PERMISSION' => 1),
       array( 'PAGE' => 'skills', 'BUTTON_NAME' => $language['BUTTON_SKILLS'], 'PERMISSION' => 1),
-      array( 'PAGE' => 'corpse', 'BUTTON_NAME' => $language['BUTTON_CORPSE'], 'PERMISSION' => 1),
       array( 'PAGE' => 'factions', 'BUTTON_NAME' => $language['BUTTON_FACTION'], 'PERMISSION' => 1),
-      array( 'PAGE' => 'bots', 'BUTTON_NAME' => $language['BUTTON_BOTS'], 'PERMISSION' => $cb_show_bots),
       array( 'PAGE' => 'bazaar', 'BUTTON_NAME' => $language['BUTTON_STORE'], 'PERMISSION' => 1),
-      array( 'PAGE' => 'signaturebuilder', 'BUTTON_NAME' => $language['BUTTON_SIG'], 'PERMISSION' => 1),
-      array( 'PAGE' => 'charmove', 'BUTTON_NAME' => $language['BUTTON_CHARMOVE'], 'PERMISSION' => 1),
+      array( 'PAGE' => 'signaturebuilder', 'BUTTON_NAME' => $language['BUTTON_SIG'], 'PERMISSION' => 1)
    );
    
    $cb_template->set_filenames(array(

@@ -77,7 +77,7 @@ if (!is_numeric($start)) cb_message_die($language['MESSAGE_ERROR'],$language['ME
 *********************************************/ 
 //build where clause
 $filters = array();
-if (!$showsoftdelete && !$charbrowser_is_admin_page) $filters[] = "character_data.deleted_at IS NULL"; 
+if (!$showsoftdelete && !$charbrowser_is_admin_page) $filters[] = "character_data.is_deleted = '0'";
 if ($name) $filters[] = "character_data.name LIKE '%".str_replace("_", "%", str_replace(" ","%",$name))."%'"; 
 if ($guild) {
    $filters[] = "guilds.name LIKE '%".str_replace("_", "%", str_replace(" ","%",$guild))."%'";
@@ -92,7 +92,7 @@ $where = generate_where($filters);
 $tpl = <<<TPL
 SELECT character_data.class, character_data.level, 
        character_data.name, guilds.name AS guildname, 
-       character_data.deleted_at, character_data.anon
+       character_data.is_deleted, character_data.anon
 FROM character_data 
 LEFT JOIN guild_members
        ON character_data.id = guild_members.char_id 
@@ -152,7 +152,7 @@ for ($i = $start; $i < $finish; $i++) {
    $cb_template->assign_both_block_vars("characters", array( 
       'CLASS' => $dbclassnames[$character["class"]],      
       'LEVEL' => $character["level"],     
-      'DELETED' => (($character["deleted_at"]) ? " ".$language['CHAR_DELETED']:""),
+      'DELETED' => (($character["is_deleted"]) ? " ".$language['CHAR_DELETED']:""),
       'NAME' => $character["name"],
       'GUILD_NAME' => $charguildname )
    );

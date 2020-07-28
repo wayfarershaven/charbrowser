@@ -162,14 +162,6 @@ class item {
                      $this->mytype = 30; 
                      $this->myvslot = $this->myslot - 320; 
                      break; 
-                case ($this->myslot >= 331 && $this->myslot <= 340): 
-                     $this->mytype = 31; 
-                     $this->myvslot = $this->myslot - 330; 
-                     break; 
-                case ($this->myslot >= 341 && $this->myslot <= 350): 
-                     $this->mytype = 32; 
-                     $this->myvslot = $this->myslot - 340; 
-                     break; 
                 case ($this->myslot >= 2000 && $this->myslot <= 2023): 
                      $this->mytype = 3; 
                      $this->myvslot = $this->myslot; 
