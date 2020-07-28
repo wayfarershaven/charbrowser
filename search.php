@@ -76,22 +76,9 @@ if (!is_numeric($start)) cb_message_die($language['MESSAGE_ERROR'],$language['ME
         BUILD AND EXECUTE THE SEARCH
 *********************************************/ 
 //build where clause
-<<<<<<< HEAD
-$where = "";
-$divider = "WHERE ";
-if (!$showsoftdelete && !$charbrowser_is_admin_page) {
-   $where .= $divider."character_data.is_deleted = '0'";
-   $divider = " AND ";
-}
-if ($name) {
-   $where .= $divider."character_data.name LIKE '%".str_replace("_", "%", str_replace(" ","%",$name))."%'"; 
-   $divider = " AND ";
-}
-=======
 $filters = array();
 if (!$showsoftdelete && !$charbrowser_is_admin_page) $filters[] = "character_data.deleted_at IS NULL"; 
 if ($name) $filters[] = "character_data.name LIKE '%".str_replace("_", "%", str_replace(" ","%",$name))."%'"; 
->>>>>>> a48958e... performance patch, removed a bunch of queries
 if ($guild) {
    $filters[] = "guilds.name LIKE '%".str_replace("_", "%", str_replace(" ","%",$guild))."%'";
    
@@ -117,10 +104,6 @@ TPL;
  
 $query = sprintf($tpl, $where, $orderby, $direction);
 $result = $cbsql->query($query);
-<<<<<<< HEAD
-$totalchars = $cbsql->rows($result);
-if (!$totalchars) cb_message_die($language['MESSAGE_ERROR'],$query);
-=======
 
 //fetch the results
 $characters = $cbsql->fetch_all($result);
@@ -128,7 +111,6 @@ $totalchars = count($characters);
 
 //error if there is no guild
 if (!$totalchars) cb_message_die($language['MESSAGE_ERROR'],$language['MESSAGE_NO_RESULTS_ITEMS']);
->>>>>>> a48958e... performance patch, removed a bunch of queries
 
  
  

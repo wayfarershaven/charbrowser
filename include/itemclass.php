@@ -1,24 +1,24 @@
-<?php
-/***************************************************************************
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   Portions of this program are derived from publicly licensed software
- *   projects including, but not limited to phpBB, Magelo Clone,
- *   EQEmulator, EQEditor, and Allakhazam Clone.
- *
- *                                  Author:
- *                           Maudigan(Airwalking)
- *
- *   March 14, 2011 - Updated for Bank slots 17-24
+<?php 
+/*************************************************************************** 
+ * 
+ *   This program is free software; you can redistribute it and/or modify 
+ *   it under the terms of the GNU General Public License as published by 
+ *   the Free Software Foundation; either version 2 of the License, or 
+ *   (at your option) any later version. 
+ * 
+ *   Portions of this program are derived from publicly licensed software 
+ *   projects including, but not limited to phpBB, Magelo Clone, 
+ *   EQEmulator, EQEditor, and Allakhazam Clone. 
+ * 
+ *                                  Author: 
+ *                           Maudigan(Airwalking) 
+ * 
+ *   March 14, 2011 - Updated for Bank slots 17-24 
  *   February 5, 2014 - Updated for Powersource (Maudigan c/o Natedog)
  *   February 9, 2014 - Fixed charm item type getting set wrong (Maudigan)
- *   November 10,2018 - Added uleats inventory changes (Maudigan):
+ *   November 10,2018 - Added uleats inventory changes (Maudigan): 
  *                         Ammo moved 21 to 22
- *                         Power source moved 9999 to 21
+ *                         Power source moved 9999 to 21 
  *                         Cursor moves 30 to 33
  *                         Bags moved 22-29 to 23-32 (+1 and two new slots)
  *                         Cursor bag contents moved 331-340 to 351-360
@@ -36,16 +36,16 @@
  *     cached the items db row in constructor
  *     added a function to get a column value from the db row
  *
- ***************************************************************************/
-
-
-
-
-if ( !defined('INCHARBROWSER') )
-{
-    die("Hacking attempt");
-}
-Include_once(__DIR__ . "/item.php");
+ ***************************************************************************/ 
+  
+  
+  
+  
+ if ( !defined('INCHARBROWSER') ) 
+{ 
+        die("Hacking attempt"); 
+} 
+Include_once(__DIR__ . "/item.php"); 
 // holds all the items 
 class item { 
   
@@ -389,5 +389,3 @@ class item {
         } 
   
 } 
-
-}
